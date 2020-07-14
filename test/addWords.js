@@ -7,14 +7,14 @@ describe('filter', function(){
   describe('addWords',function(){
     it('Should append words to the filter list.', function(){
       filter.addWords('dog', 'go');
-      assert(filter.clean('Go dog go') === '** *** **');
+      assert(filter.clean('Go dog go') === 'Go d*g go');
     });
 
     it('Should append words to the filter using an array', () => {
       let addWords = ['go', 'dog'];
       filter = new Filter()
       filter.addWords(...addWords);
-      assert(filter.clean('Go dog go') === '** *** **');
+      assert(filter.clean('Go dog go') === 'Go d*g go');
     });
 
     it('Should allow a list to be passed to the constructor', function() {
@@ -22,7 +22,7 @@ describe('filter', function(){
         list: ['dog']
       });
 
-      assert(filter.clean('Go dog go') === 'Go *** go');
+      assert(filter.clean('Go dog go') === 'Go d*g go');
     });
   });
 });
