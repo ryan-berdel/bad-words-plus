@@ -9,7 +9,8 @@
   "scripts": {
     "test": "./node_modules/.bin/mocha -R spec",
     "commit": "git-cz",
-    "docs": "./node_modules/.bin/documentation readme --section API ./lib/badwords.js"
+    "docs": "./node_modules/.bin/documentation readme --section API ./lib/badwords.js",
+    "semantic-release": "semantic-release"
   },
   "repository": {
     "type": "git",
@@ -28,7 +29,8 @@
     "better-assert": "1.0.0",
     "cz-conventional-changelog": "^3.2.0",
     "documentation": "^13.0.2",
-    "mocha": "^8.0.1"
+    "mocha": "^8.0.1",
+    "semantic-release": "^17.1.1"
   },
   "author": "Mike P., Ryan Berdel",
   "license": "MIT",
