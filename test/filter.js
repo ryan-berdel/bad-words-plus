@@ -23,7 +23,7 @@ describe('filter', function(){
 			assert(customFilter.clean('This is a hells good test') === 'This is a hxxxs good test');
 		});
 
-		it('Should allow an instance of filter with an empty blacklist', function() {
+		it('Should allow an instance of filter with an empty blocklist', function() {
 			var customFilter = new Filter({
 				emptyList: true
 			});
@@ -35,7 +35,8 @@ describe('filter', function(){
 			assert(filter.clean('<p>Don\'t be an asshole</p>') === '<p>Don\'t be an a*****e</p>');
 		});
 
-		xit('Should filter words that are derivatives of words from the filter blacklist', function() {
+		xit('Should filter words that are derivatives of words from the filter blocklist', function() {
+			console.log("HERE");
 			assert(filter.clean('shitshit') === 's******t');
     });
 
