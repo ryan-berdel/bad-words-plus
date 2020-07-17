@@ -5,8 +5,8 @@ var Filter = require('../lib/badwords.js'),
 
 describe('filter', function(){
 	describe('replaceWord',function(){
-		it("Should replace a bad word with asterisks (a****e)",function(){
-			assert(filter.replaceWord("ash0le") == 'a****e');
+		it("Should replace a bad word with asterisks (******)",function(){
+			assert(filter.replaceWord("ash0le") == '******');
 		});
 	});
 });
