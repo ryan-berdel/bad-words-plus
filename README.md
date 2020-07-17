@@ -3,12 +3,13 @@
 bad-words-plus adds the ability to display the first and/or last letter of of the profane word to the original badwords profanity filtration project. For instance, if "nerd" is added to the blocklist, then "n\*\*\*" or "n\*\*d" can be optionally displayed instead of the default "\*\*\*\*". If you don't need that functionality, you may want to chose the original badwords.
 
 [![Build Status](https://travis-ci.org/ryan-berdel/bad-words-plus.svg?branch=master)](https://travis-ci.org/ryan-berdel/bad-words-plus)
+[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 
 ## Requirements
 
-As of version 2, requires you either have an environment that understands ES2016 and beyond or a transpiler like Babel.
+Requires Node 12, an environment that understands ES2016 or a transpiler like Babel.
 
-<!--
+<!--Coming soon
 ## Installation
 
     npm install bad-words-plus --save
