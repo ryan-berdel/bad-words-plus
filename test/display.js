@@ -16,7 +16,7 @@ describe('display', function () {
       filter = new Filter({ firstLetter: true, lastLetter: true });
       filter.addWords('nerd', 'dog', 'go');
       assert(filter.clean('damn nerd') == 'd**n n**d');
-      assert(filter.clean("go dog go") == "go d*g go");
+      assert(filter.clean("go dog go") == "g* d*g g*");
     });
 
     it('last letter', function () {
