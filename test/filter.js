@@ -36,10 +36,6 @@ describe('filter', function(){
 			assert(filter.clean('<p>Don\'t be an asshole</p>') === '<p>Don\'t be an *******</p>');
 		});
 
-		xit('Should filter words that are derivatives of words from the filter blacklist', function() {
-			assert(filter.clean('shitshit') === '********');
-    });
-
     it('Shouldn\'t filter words that aren\'t profane.', function() {
 			assert(filter.clean('hello there') === 'hello there');
     });
