@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/web-mech/badwords.git"
+    "url": "git://github.com/ryan-berdel/bad-words-plus.git"
   },
   "keywords": [
     "curse",
@@ -28,7 +28,7 @@
     "documentation": "^13.0.2",
     "mocha": "^8.0.1"
   },
-  "author": "Mike P.",
+  "author": "Mike P., Ryan Berdel",
   "license": "MIT",
   "engines": {
     "node": ">=8.0.0"
