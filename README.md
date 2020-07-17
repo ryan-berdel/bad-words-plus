@@ -1,32 +1,45 @@
-# bad-words
+# bad-words-plus
+bad-words-plus adds the ability to display the first and/or last letter of of the profane word to the original badwords. For instance, if "nerd" is added to the blocklist, then "n\*\*\*" or "n\*\*d" can be optionally displayed instead of the default "\*\*\*\*". If you don't need that functionality, you may want to chose the original badwords.
 
-A javascript filter for badwords
-
+<!--
 [![Build Status](https://travis-ci.org/web-mech/badwords.svg?branch=master)](https://travis-ci.org/web-mech/badwords)
-[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
-[![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg?style=flat-square)](https://github.com/semantic-release/semantic-release)
-
+-->
 ## Requirements
 
 As of version 2, requires you either have an environment that understands ES2016 and beyond or a transpiler like Babel.
 
+<!--
 ## Installation
 
-    npm install bad-words --save
-
+    npm install bad-words-plus --save
+-->
 ## Usage
 
 ```js
-var Filter = require('bad-words'),
+var Filter = require('bad-words-plus'),
     filter = new Filter();
 
 console.log(filter.clean("Don't be an ash0le")); //Don't be an ******
 ```
 
+```js
+var Filter = require('bad-words-plus'),
+    filter = new Filter({firstLetter: true});
+
+console.log(filter.clean("Don't be an ash0le")); //Don't be an a*****
+```
+
+```js
+var Filter = require('bad-words-plus'),
+    filter = new Filter({firstLetter: true, lastLetter: true});
+
+console.log(filter.clean("Don't be an ash0le")); //Don't be an a****e
+```
+
 ### Placeholder Overrides
 
 ```js
-var Filter = require('bad-words');
+var Filter = require('bad-words-plus');
 var customFilter = new Filter({ placeHolder: 'x'});
 
 customFilter.clean("Don't be an ash0le"); //Don't be an xxxxxx
@@ -155,7 +168,7 @@ Add words to allowlist filter
 
 The MIT License (MIT)
 
-Copyright (c) 2013 Michael Price
+Copyright (c) 2013-2020 Michael Price, Ryan Berdel
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the "Software"), to deal in
