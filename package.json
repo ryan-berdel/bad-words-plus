@@ -1,6 +1,6 @@
 {
   "name": "bad-words-plus",
-  "version": "0.0.0-development",
+  "version": "1.0.0",
   "description": "A javascript filter for bad words with display options",
   "main": "./lib/bad-words-plus",
   "directories": {
