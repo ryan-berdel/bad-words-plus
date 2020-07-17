@@ -1,15 +1,16 @@
 {
   "name": "bad-words-plus",
-  "version": "0.0.8",
+  "version": "1.0.0",
   "description": "A javascript filter for bad words with display options",
   "main": "./lib/badwords",
   "directories": {
+    "lib": "lib",
     "test": "test"
   },
   "scripts": {
-    "test": "./node_modules/.bin/mocha -R spec",
+    "test": "mocha -R spec",
     "commit": "git-cz",
-    "docs": "./node_modules/.bin/documentation readme --section API ./lib/badwords.js"
+    "docs": "documentation readme --section API ./lib/badwords.js"
   },
   "repository": {
     "type": "git",
@@ -39,5 +40,9 @@
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/ryan-berdel/bad-words-plus/issues"
+  },
+  "homepage": "https://github.com/ryan-berdel/bad-words-plus#readme"
 }
