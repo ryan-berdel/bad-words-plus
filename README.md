@@ -2,7 +2,7 @@
 bad-words-plus adds the ability to display the first and/or last letter of of the profane word to the original badwords profanity filtration project. For instance, if "nerd" is added to the blocklist, then "n\*\*\*" or "n\*\*d" can be optionally displayed instead of the default "\*\*\*\*". If you don't need that functionality, you may want to chose the original badwords.
 
 
-[![Build Status](https://api.travis-ci.org/ryan-berdel/bad-words-plus.svg?branch=master)](https://travis-ci.org/ryan-berdel/bad-words-plus)
+[![Build Status](https://travis-ci.org/ryan-berdel/bad-words-plus.svg?branch=master)](https://travis-ci.org/ryan-berdel/bad-words-plus)
 
 ## Requirements
 
