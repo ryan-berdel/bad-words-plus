@@ -9,11 +9,9 @@ bad-words-plus adds the ability to display the first and/or last letter of of th
 
 Requires Node 12, an environment that understands ES2016 or a transpiler like Babel.
 
-<!--Coming soon
 ## Installation
 
     npm install bad-words-plus --save
--->
 
 ## Usage
 
