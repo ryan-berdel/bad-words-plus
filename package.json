@@ -2,13 +2,13 @@
   "name": "bad-words-plus",
   "version": "0.0.8",
   "description": "A javascript filter for bad words with display options",
-  "main": "./lib/bad-words-plus",
+  "main": "./lib/badwords",
   "directories": {
     "test": "test"
   },
   "scripts": {
     "test": "./node_modules/.bin/mocha -R spec",
-    "commit" : "git-cz",
+    "commit": "git-cz",
     "docs": "./node_modules/.bin/documentation readme --section API ./lib/badwords.js"
   },
   "repository": {
