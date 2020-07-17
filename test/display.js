@@ -7,8 +7,8 @@ describe('display', function () {
 
     it('first letter', function () {
       filter = new Filter({ firstLetter: true });
-      filter.addWords('nerd', 'dog', 'go');
-      assert(filter.clean('damn nerd') == 'd*** n***');
+      filter.addWords('nerd*', 'dog', 'go');
+      assert(filter.clean('damn nerdy') == 'd*** nerdy');
       assert(filter.clean("go dog go") == "g* d** g*");
     });
 
