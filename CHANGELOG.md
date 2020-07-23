@@ -1,3 +1,13 @@
+# Semantic Versioning Changelog
+
+## [3.0.4](https://github.com/ryan-berdel/bad-words-plus/compare/v3.0.3...v3.0.4) (2020-07-23)
+
+
+### Reverts
+
+* Revert ""docs(README.md): Automated update of the documentation"" ([c049a24](https://github.com/ryan-berdel/bad-words-plus/commit/c049a24b722af793b7e1e68f7db116d7beac924e))
+* Revert "Override failing semantic auto-versioning" ([8596e1b](https://github.com/ryan-berdel/bad-words-plus/commit/8596e1b80e9502e59ccfbb81df8901ebbe2d3ddd))
+
 # Change Log
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
