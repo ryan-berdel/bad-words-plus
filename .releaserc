@@ -23,8 +23,7 @@
             {
                 "assets": [
                     {
-                        "path": "dist/**",
-                        "repositoryURL": "https://github.com/ryan-berdel/bad-words-plus.git" 
+                        "path": "dist/**"
                     }
                 ]
             }
