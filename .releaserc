@@ -11,12 +11,6 @@
             }
         ],
         [
-            "@semantic-release/exec",
-            {
-                "prepareCmd": "npm version ${nextRelease.version}"
-            }
-        ],
-        [
             "@semantic-release/git",
             {
                 "assets": [
