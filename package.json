@@ -8,6 +8,7 @@
     "test": "test"
   },
   "scripts": {
+    "ver": "npx node-env-run --exec \"semantic-release --ci false\"",
     "test": "mocha -R spec",
     "commit": "git-cz",
     "docs": "documentation readme --section API ./lib/badwords.js"
